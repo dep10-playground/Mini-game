@@ -22,6 +22,10 @@ let jump = false;
 let run = false;
 let dx = 0;
 
+document.body.addEventListener('keydown', (eventData)=> {
+    if (eventData.code === 'Space'){
+        jump = true;
+    }else if (eventData.code === 'ArrowRight'){
         boxElm.style.transform = 'rotateY(0deg)'
         run = true;
         dx = 2;
